@@ -1,1 +1,29 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de discussion</title>
+    <style>
+        #chat-box {
+            height: 300px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Site de discussion</h1>
+    <div id="chat-box"></div>
+    <form id="message-form">
+        <input type="text" id="user-name" placeholder="Votre nom" required>
+        <input type="text" id="message-input" placeholder="Votre message" required>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
