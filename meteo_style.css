@@ -1,0 +1,42 @@
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://i.pinimg.com/originals/d7/e7/81/d7e781b32269a8a82b500c1a9dc97733.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+
+        .temperature-container {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            margin: 3px;
+        }
+        .humidite-container {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            margin: 3px;
+        }
+
+        .temperature {
+            font-size: 48px;
+            color: #333;
+            margin: 0;
+        }
+        .humidite {
+            font-size: 48px;
+            color: #333;
+            margin: 0;
+        }
