@@ -41,6 +41,7 @@
             margin: 0;
         }
         .icon{
-                size:1em;
+                height:1em;
+                width:auto;
                 padding-right:2px;
         }
