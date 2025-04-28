@@ -4,13 +4,38 @@
 <meta charset="utf-8">
 <title>Supra CV</title>
 <link href="margin.css" rel="stylesheet">
-
+  <style>
+    #playButton {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+	right:0;
+    }
+    #playButton:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
     <div class="header"></div>
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.makeagif.com%2Fmedia%2F8-24-2023%2F9tK-Jr.gif&f=1&nofb=1&ipt=bc433bffb4de5710d2a4a4944cae5015b9ce8c84f88574667bb6366402109b5e" class="profile-picture">
 
 <h2>Freude-Antoine Monteryx Albus Ludwig Saint-Catherine De Bonne Esperance</h2><br>
+	  <button id="playButton">Jouer la musique</button>
+  <audio id="myAudio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+  <script>
+    const playButton = document.getElementById('playButton');
+    const myAudio = document.getElementById('myAudio');
+
+    playButton.addEventListener('click', () => {
+      myAudio.play();
+    });
+  </script>
 <ul>
 <li><strong>Adresse</strong> : 24 rue de la démagogie<br><br></li>
 <li><strong>Ville</strong> : Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson 51290<br><br></li>
