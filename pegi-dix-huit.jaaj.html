@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Site WTF 🌀🦄</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #ff00ff, #00ffff);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      overflow: hidden;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 5em;
+      margin-top: 50px;
+      animation: spin 5s infinite linear;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+
+    button {
+      background-color: #ffcc00;
+      border: none;
+      padding: 20px 40px;
+      font-size: 2em;
+      cursor: pointer;
+      border-radius: 50px;
+      margin-top: 40px;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0);}
+      50% { transform: translateY(-20px);}
+    }
+
+    .unicorn {
+      position: absolute;
+      width: 100px;
+      transition: all 2s ease;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenue sur WTFland 🌀</h1>
+  <button onclick="spawnUnicorn()">Clique ici... ou pas</button>
+
+  <script>
+    function spawnUnicorn() {
+      const unicorn = document.createElement('img');
+      unicorn.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Unicorn_rearing.svg/1024px-Unicorn_rearing.svg.png';
+      unicorn.className = 'unicorn';
+      unicorn.style.top = Math.random() * window.innerHeight + 'px';
+      unicorn.style.left = Math.random() * window.innerWidth + 'px';
+      document.body.appendChild(unicorn);
+
+      setTimeout(() => {
+        unicorn.style.top = Math.random() * window.innerHeight + 'px';
+        unicorn.style.left = Math.random() * window.innerWidth + 'px';
+      }, 100);
+    }
+
+    // Musique chelou au chargement (optionnel)
+    window.onload = () => {
+      const audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+      audio.volume = 0.1;
+      audio.play();
+    };
+  </script>
+</body>
+</html>
